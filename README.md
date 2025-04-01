@@ -27,9 +27,10 @@ Google Books API search engine built in MERN Stack. Other than searching for boo
 
 
 ## Screenshots
-![Signup_Login](https://github.com/user-attachments/assets/2c20f326-9b39-470f-877d-34aee94e8392)
-![Book_Search](https://github.com/user-attachments/assets/9a586815-5b75-47cc-acfa-b4c6a331d5f3)
-![Saved_books_search](https://github.com/user-attachments/assets/112cff86-d7d3-4d3d-b9d7-443d0f3adb93)
+![Signup_Login](https://github.com/user-attachments/assets/bc69e43c-7311-4956-8812-5d5ab20ea2ff)
+![Book_Search](https://github.com/user-attachments/assets/73f1a966-8d27-4fca-a6ad-b3b0f20c3faa)
+![Saved_books_search](https://github.com/user-attachments/assets/a597c734-9402-482b-8330-77087ac20e91)
+
 
 
 

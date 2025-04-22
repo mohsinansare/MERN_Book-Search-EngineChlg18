@@ -3,9 +3,9 @@ import { ApolloServer } from 'apollo-server-express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 // @ts-ignore
-import db from './config/connection.js';
+import db from './server/config/connection.js';
 // filepath: C:\Computer Programming\first-day\FSF-PT-EAST-NOVEMBER-110424\18-MERN-and-Authentication\02-Challenge\Develop\server\server.js
-import connection from './config/connection.js'; // Adjust path if needed
+import connection from './server/config/connection.js'; // Adjust path if needed
 
 // Define typeDefs and resolvers directly in this file
 const typeDefs = `#graphql

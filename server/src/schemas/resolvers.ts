@@ -26,4 +26,4 @@ const profileSchema = new Schema({
 
 const Profile = model('Profile', profileSchema);
 
-export { Profile };
+export default { Profile };

@@ -42,7 +42,9 @@ const startApolloServer = async () => {
   const server = new ApolloServer({
     typeDefs,
     resolvers,
-    context: ({ req }) => ({ req }),
+    persistedQueries: false, // Disable persisted queries to prevent unbounded cache
+    // Alternatively, you can use a bounded cache:
+    // cache: "bounded",
   });
 
   await server.start();

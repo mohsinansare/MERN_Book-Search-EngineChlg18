@@ -2,11 +2,7 @@ import mongoose from 'mongoose';
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI, {
-      // Remove deprecated options
-      // useNewUrlParser: true, // No longer needed
-      // useUnifiedTopology: true, // Also deprecated
-    });
+    await mongoose.connect(process.env.MONGODB_URI);
     console.log('MongoDB connected successfully');
   } catch (err) {
     console.error('MongoDB connection error:', err.message);
@@ -14,4 +10,8 @@ const connectDB = async () => {
   }
 };
 
-export default connectDB;
+// Call connectDB to establish the connection
+connectDB();
+
+// Export the Mongoose connection object
+export default mongoose.connection;

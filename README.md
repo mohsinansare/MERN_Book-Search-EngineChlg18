@@ -5,7 +5,7 @@
 Google Books API search engine built in MERN Stack.
 
 ### Github : https://github.com/mohsinansare/MERN_Book--Search-EngineChlg18
-### Website : https://http://localhost:3001/
+### Website : https://http://localhost:3000/
 ### Render deploy: https://mern-book-search-enginechlg18.onrender.com/
 
 ## Description
@@ -23,8 +23,10 @@ Google Books API search engine built in MERN Stack. Other than searching for boo
 - Application allows users to search books with keywords.
 - Users are able to create an account when providing user name, email and password.
 - Logged in users will are able to save their favorite books as well as delete them.
-- Saved books are stored in their account, so next time they login, the books are still in their account to be viewed. 
-
+- Saved books are stored in their account, so next time they login, the books are still in their account to be viewed.
+- ### Install
+npm install, npm run build, and
+npm run develop.
 
 ## Screenshots
 ![Signup_Login](https://github.com/user-attachments/assets/bc69e43c-7311-4956-8812-5d5ab20ea2ff)

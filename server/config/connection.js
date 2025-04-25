@@ -1,13 +1,17 @@
 import mongoose from 'mongoose';
 
-// Use environment variable or fallback to local MongoDB
-const connectionString = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/bookSearchEngine';
+const connectDB = async () => {
+  try {
+    await mongoose.connect(process.env.MONGODB_URI, {
+      // Remove deprecated options
+      // useNewUrlParser: true, // No longer needed
+      // useUnifiedTopology: true, // Also deprecated
+    });
+    console.log('MongoDB connected successfully');
+  } catch (err) {
+    console.error('MongoDB connection error:', err.message);
+    process.exit(1);
+  }
+};
 
-// Connect to MongoDB
-mongoose.connect(connectionString, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-
-// Export the connection
-export default mongoose.connection;
+export default connectDB;
